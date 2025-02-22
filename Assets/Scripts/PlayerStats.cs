@@ -45,7 +45,7 @@ public class PlayerStats : MonoBehaviour
         healthCounter.value = health;
         background.maxValue = maxHealth;
         background.value = health;
-        ca = GameObject.FindGameObjectWithTag("Virtual Camera").GetComponent<CinemachineVolumeSettings>().Profile.components.Last().GetComponent<ChromaticAberration>();
+        //ca = GameObject.FindGameObjectWithTag("Virtual Camera").GetComponent<CinemachineVolumeSettings>().Profile.components.Last().GetComponent<ChromaticAberration>();
         }
 
         private void Update()
@@ -84,7 +84,7 @@ public class PlayerStats : MonoBehaviour
         }
         else
         {
-            ca.intensity.value = 0f;
+            //ca.intensity.value = 0f;
         }
     }
 
